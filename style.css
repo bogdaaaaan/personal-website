@@ -42,7 +42,7 @@ body {
 }
 
 .page-header {
-	padding: 30px 0;
+	padding: 25px 0;
 	margin-bottom: 20px;
 	background-color: #030213;
 }
@@ -99,10 +99,25 @@ body {
 	color: var(--color-secondary);
 }
 
-.personal-card-info-data {
-	font-size: 18px;
+.link {
 	color: #000;
 	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.link:focus-visible {
+	outline: 2px solid black;
+	outline-offset: 4px;
+}
+
+.personal-card-info-data {
+	font-size: 18px;
 }
 
 .about-me {
@@ -206,7 +221,7 @@ body {
 .hard-skills .card {
 	flex-grow: 1;
 	flex-shrink: 1;
-	flex-basis: 0
+	flex-basis: 0;
 }
 
 .hobbies-list {
@@ -280,11 +295,12 @@ body {
 }
 
 .page-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #dadada;
 	margin-top: 30px;
+}
+
+.footer-info {
+	text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -299,7 +315,7 @@ body {
 
 @media only screen and (max-width: 768px) {
 	.personal-card {
-		overflow: auto;
+		word-break: break-word;
 	}
 
 	.hobbies-list {
